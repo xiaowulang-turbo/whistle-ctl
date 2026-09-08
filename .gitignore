@@ -1,0 +1,11 @@
+# deps
+node_modules/
+
+# npm
+npm-debug.log*
+*.tgz
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/

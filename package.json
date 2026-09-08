@@ -1,0 +1,39 @@
+{
+  "name": "whistle-ctl",
+  "version": "0.1.0",
+  "description": "CLI over the Whistle Local Agent API (>= 2.10.7) — manage rule groups (add/select/unselect/top/delete) without w2 restart",
+  "main": "bin/whistle-ctl.js",
+  "bin": {
+    "whistle-ctl": "bin/whistle-ctl.js"
+  },
+  "files": [
+    "bin/"
+  ],
+  "scripts": {
+    "test": "node bin/whistle-ctl.js -h"
+  },
+  "keywords": [
+    "whistle",
+    "proxy",
+    "debug",
+    "rules",
+    "cli",
+    "agent",
+    "http-proxy"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "whistle": ">=2.10.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaowulang-turbo/whistle-ctl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiaowulang-turbo/whistle-ctl/issues"
+  },
+  "homepage": "https://github.com/xiaowulang-turbo/whistle-ctl#readme"
+}
