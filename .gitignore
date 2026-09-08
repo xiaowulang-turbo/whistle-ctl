@@ -1,6 +1,9 @@
 # deps
 node_modules/
 
+# build output
+site/dist/
+
 # npm
 npm-debug.log*
 *.tgz

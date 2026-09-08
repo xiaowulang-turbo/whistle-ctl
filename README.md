@@ -1,5 +1,8 @@
 # whistle-ctl
 
+[![npm](https://img.shields.io/npm/v/whistle-ctl)](https://www.npmjs.com/package/whistle-ctl)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A tiny CLI over the [Whistle Local Agent API](https://wproxy.org/docs/extensions/api.html) (whistle `>= 2.10.7`).
 
 Whistle exposes a programmatic Node module (`bin/api`) that lets you manage rule groups, plugins,
@@ -10,6 +13,8 @@ that bites plain `curl` calls).
 
 `whistle-ctl` wraps that module into a small, dependency-free command-line tool so scripts, CI
 pipelines and AI agents can drive Whistle rules with one line.
+
+> **Website** — see the landing page in [`site/`](./site) (React + Vite + Tailwind).
 
 ## Why this exists
 

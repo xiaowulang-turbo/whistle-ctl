@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 217 33% 7%;
+    --foreground: 210 20% 96%;
+    --card: 217 32% 11%;
+    --card-foreground: 210 20% 96%;
+    --popover: 217 32% 11%;
+    --popover-foreground: 210 20% 96%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 217 33% 7%;
+    --secondary: 217 25% 15%;
+    --secondary-foreground: 210 20% 96%;
+    --muted: 217 25% 15%;
+    --muted-foreground: 215 16% 65%;
+    --accent: 199 89% 48%;
+    --accent-foreground: 217 33% 7%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 217 25% 18%;
+    --input: 217 25% 18%;
+    --ring: 199 89% 48%;
+    --radius: 0.625rem;
+  }
+
+  .dark {
+    --background: 217 33% 7%;
+    --foreground: 210 20% 96%;
+    --card: 217 32% 11%;
+    --card-foreground: 210 20% 96%;
+    --popover: 217 32% 11%;
+    --popover-foreground: 210 20% 96%;
+    --primary: 199 89% 48%;
+    --primary-foreground: 217 33% 7%;
+    --secondary: 217 25% 15%;
+    --secondary-foreground: 210 20% 96%;
+    --muted: 217 25% 15%;
+    --muted-foreground: 215 16% 65%;
+    --accent: 199 89% 48%;
+    --accent-foreground: 217 33% 7%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 217 25% 18%;
+    --input: 217 25% 18%;
+    --ring: 199 89% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+  code,
+  pre,
+  kbd {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+}
+
+@layer utilities {
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgb(148 163 184 / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(148 163 184 / 0.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #38bdf8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
